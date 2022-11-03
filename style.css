@@ -1,0 +1,35 @@
+
+body{
+  background-image: linear-gradient(rgb(117, 97, 141), rgb(60, 56, 94)
+  );
+  background-attachment: fixed;
+  
+}
+
+
+p{
+  background-image: radial-gradient(rgba(102, 34, 34, 0),rgba(175, 57, 57, 0.089));
+  padding: 1rem;
+  border: 1px white dotted;
+}
+h2, h1{
+  background-image: radial-gradient(rgba(102, 34, 34, 0),rgba(59, 18, 18, 0.171));
+  padding: 1rem;
+  border: 1px white dotted;
+  margin-bottom: -1rem;
+}
+
+#bg{
+  position: fixed;
+  top: 0;
+  left:0;
+}
+main{
+  top:0;
+  left:0;
+  color: rgb(196, 196, 196);
+  margin-left:12%;
+  position: absolute;
+  width: 20rem;
+  text-shadow: 0 0 12px #704fa585, 0 0 3px #2c1c758f, 0 0 4px #302168a1;;
+}
