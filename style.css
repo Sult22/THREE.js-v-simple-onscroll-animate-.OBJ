@@ -8,11 +8,15 @@ body{
 
 
 p{
+  box-shadow:0 0 200px rgba(0, 0, 0, 0.622);
+  background-color: black;
   background-image: radial-gradient(rgba(102, 34, 34, 0),rgba(175, 57, 57, 0.089));
   padding: 1rem;
   border: 1px white dotted;
 }
 h2, h1{
+  box-shadow:0 0 200px rgba(0, 0, 0, 0.622);
+  background-color: black;
   background-image: radial-gradient(rgba(102, 34, 34, 0),rgba(59, 18, 18, 0.171));
   padding: 1rem;
   border: 1px white dotted;
@@ -25,9 +29,12 @@ h2, h1{
   left:0;
 }
 main{
+  margin-top: 1rem;
+  
+  
   top:0;
   left:0;
-  color: rgb(196, 196, 196);
+  color: rgb(224, 218, 218);
   margin-left:12%;
   position: absolute;
   width: 20rem;
