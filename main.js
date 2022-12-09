@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 
 
 //mouse variables
@@ -37,29 +37,29 @@ function render() {
 }
 
 //lights
-// const cameraLight = new THREE.SpotLight(0xffffff, 6);
-// cameraLight.castShadow = true;
+ const cameraLight = new THREE.SpotLight(0xffffff, 6);
+ cameraLight.castShadow = true;
 
 
-// cameraLight.shadow.bias = -0.0001;
+ cameraLight.shadow.bias = -0.0001;
 
-// cameraLight.shadow.camera.near = 0.1; // default
-// cameraLight.shadow.camera.far = 500; // default
+cameraLight.shadow.camera.near = 0.1; // default
+ cameraLight.shadow.camera.far = 500; // default
 
 
 
-// cameraLight.visible = true;
-// cameraLight.distance = 40;
-// cameraLight.decay = 16;
-// cameraLight.angle = Math.PI/4;
-// cameraLight.penumbra = 0.9; 
+cameraLight.visible = true;
+cameraLight.distance = 40;
+cameraLight.decay = 16;
+cameraLight.angle = Math.PI/4;
+cameraLight.penumbra = 0.9; 
 
 
     
-// camera.add( cameraLight );
-// cameraLight.position.set( 0, 0, 3);
-// scene.add( camera );
-// cameraLight.target = camera;
+camera.add( cameraLight );
+cameraLight.position.set( 0, 0, 3);
+scene.add( camera );
+cameraLight.target = camera;
 
 //pointlight mouse follow
 var pointLight = new THREE.PointLight(0xAAAAAA, 0.35);
@@ -100,6 +100,35 @@ const lambertTest = new THREE.MeshLambertMaterial({
   reflectivity: 200,
   side: THREE.DoubleSide
 })
+
+//gltf_loader
+const gloader =new GLTFLoader();
+
+  gloader.load(
+    // resource URL
+    'objects/zbuling_kniha.gltf',
+    // called when the resource is loaded
+    function ( gltf ) {
+  
+      scene.add( gltf.scene );
+  
+
+      gltf.asset; // Object
+  
+    },
+    // called while loading is progressing
+    function ( xhr ) {
+  
+      console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+  
+    },
+    // called when loading has errors
+    function ( error ) {
+  
+      console.log( 'An error happened' );
+  
+    }
+  );
 
 //loader 
 

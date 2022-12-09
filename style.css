@@ -1,42 +1,74 @@
 
-body{
-  background-image: linear-gradient(rgb(117, 97, 141), rgb(60, 56, 94)
-  );
+body{background: linear-gradient(white, rgba(116, 53, 53, 0.145));
+ 
   background-attachment: fixed;
   
 }
 
+#zbugund{
+ max-width: 100%;
 
-p{
-  box-shadow:0 0 200px rgba(0, 0, 0, 0.622);
-  background-color: black;
-  background-image: radial-gradient(rgba(102, 34, 34, 0),rgba(175, 57, 57, 0.089));
-  padding: 1rem;
-  border: 1px white dotted;
+
 }
-h2, h1{
-  box-shadow:0 0 200px rgba(0, 0, 0, 0.622);
-  background-color: black;
-  background-image: radial-gradient(rgba(102, 34, 34, 0),rgba(59, 18, 18, 0.171));
-  padding: 1rem;
-  border: 1px white dotted;
-  margin-bottom: -1rem;
+#column{
+  position: absolute;
+  padding: 4px;
+  margin: 0 auto;
+  width: 33rem;
+  margin-top: 0px;
+  padding-top: 0px;
+  
+  height: 444rem;
+  left: 33%;
+  
+}
+#column >p {
+  background: linear-gradient(rgba(191, 235, 204, 0.953),rgba(246, 144, 144, 0.496));
+  box-shadow: rgba(190, 70, 15, 0.243) 0px 10px 40px 0px, rgb(255, 4, 4) 0px 0px 0px 1px;
+  
+  text-shadow: 1px 1px 5px  rgba(217, 148, 45,0.5) ;
+ font-size: 2rem;
+ text-align: left;
+    color: rgb(0, 0, 0);
+  
+    position: relative;
+  
+  
+  
+}
+#zakoupit{
+  padding: 5px;
+ 
+  background-color: rgb(74, 74, 169);
+  box-shadow: rgba(190, 70, 15, 0.243) 0px 10px 40px 0px, rgb(255, 4, 4) 0px 0px 0px 1px;
+ position: fixed;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-left: 66%;
+  top:2.5rem;
+
+}
+a{
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.984);
+}
+
+#sizer{
+  
+
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
 }
 
 #bg{
+  
   position: fixed;
+
+
+  
+  right: 0;
   top: 0;
-  left:0;
-}
-main{
-  margin-top: 1rem;
-  
-  
-  top:0;
-  left:0;
-  color: rgb(224, 218, 218);
-  margin-left:12%;
-  position: absolute;
-  width: 20rem;
-  text-shadow: 0 0 12px #704fa585, 0 0 3px #2c1c758f, 0 0 4px #302168a1;;
+
+ 
 }
